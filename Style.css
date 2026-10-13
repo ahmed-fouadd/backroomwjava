@@ -1,0 +1,155 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#walking-person {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    z-index: 1;
+    width: 150px;
+    height: auto;
+}
+
+#walking-person.scrolling-up {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#dragon {
+    position:absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+    width: 500px;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+#room1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('stone_floor.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+#room-1 {
+    height:100vh;
+    background-image: url("../images/kitchen-tile.jpg");
+    background-size: 2% auto;
+    background-repeat: repeat;
+}
+#redCarpet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 100%;
+    background-color: rgb(191, 0, 0);
+    z-index: 0;
+}
+
+.wall {
+    position:relative;
+    height:10px;
+    width:100%;
+    background-color: #999;
+}
+
+.front-door {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:100%;
+    width:250px;
+    background-color:#000;
+}
+
+#room-2 {
+    position: relative;
+    height:200vh;
+    background-image: url("seamless-green-grass-pattern_1284-52275.avif");
+    background-size: 100% auto;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.flower {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.flower:hover {
+    transform: scale(1.2);
+}
+
+.flower-1 {
+    top: 10%;
+    left: 15%;
+}
+
+.flower-2 {
+    top: 30%;
+    left: 70%;
+}
+
+.flower-3 {
+    top: 50%;
+    left: 35%;
+}
+
+.flower-4 {
+    top: 70%;
+    left: 80%;
+}
+
+.flower-5 {
+    top: 88%;
+    left: 10%;
+}
+
+.volcano {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    height: auto;
+    z-index: 4;
+    transition: transform 0.2s ease;
+}
+
+.volcano-1 {
+    top: 10%;
+    left: 15%;
+}
+
+.volcano-2 {
+    top: 30%;
+    left: 70%;
+}
+
+.volcano-3 {
+    top: 50%;
+    left: 35%;
+}
+
+.volcano-4 {
+    top: 70%;
+    left: 80%;
+}
+
+#room-3 {
+    position: relative;
+    height:100vh;
+    background-image: url("cracked-pattern-texture-background_1409-2976.avif");
+    background-size: 100% auto;
+    background-repeat: repeat;
+}
